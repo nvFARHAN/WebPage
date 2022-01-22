@@ -11,19 +11,24 @@ body {
     border-radius: 0;
     border: 0;
   }
-  
   #nav-list {
     margin-top: 10px;
   }
-  #nav-list a {
+  #nav-list  a {
     color: white;
     text-align: center;
   }
-  
-  #nav-list a span {
-    font-size: 1.8em;
+  #dropdownList li a
+  {
+    color: black;
+  }
+  #dropdownList li a:hover
+  {
+    background-color: black;
+    color: white;
   }
 
+  /*Main Page*/
   #mainPage
   {
     background-color: #231741;
@@ -31,18 +36,9 @@ body {
     padding-top: 3em;
     padding-bottom: 3.3em;
   }
-
-  #mainPageImages img
-  {
-    max-width: 80%;
-    height: auto;
-    padding-bottom: 35px;
-    padding-top: 35px;
-  }
-
   #mainPage h1
   {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -53,6 +49,13 @@ body {
     margin-bottom: 10px;
     color: #ffa339;
     font-weight: bold;
+  }
+  #mainPageImages img
+  {
+    max-width: 80%;
+    height: auto;
+    padding-bottom: 35px;
+    padding-top: 35px;
   }
 
   #registerForDemoBtn
@@ -66,88 +69,117 @@ body {
     font-weight: bold;
   }
 
-  #footerImg img
+  /*Features page*/
+  #getInTouchBtn
   {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .startFreeWrapper
-  {
-    height: 336px;
-    background:url(../Assets/person_banner.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+    background-color:#5f6fbf;
     color: white;
-    font-size: 30px;
-    font-weight: bold;
-    box-sizing: border-box;
-  }
-  .startFreeWrapper button
-  {
-    background-color: rgb(211, 46, 73);
-    color: white;
-    font-size: 16px;
     border: none;
     border-radius: 5px;
     padding: 15px 30px 15px 30px;
+    font-weight: bold;
   }
-  .feedBackContainer
+  .features div
   {
-    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
-  .userInfo span
+  #hr1
   {
-    display: block;
+    background-color: rgb(175, 171, 171);
+    height: 10px;
+    width: 90%;
+    border-radius: 30px;
+    margin: 0 auto;
   }
 
-  .footerWrapper span
+  /*Get calls page*/
+  .getCallsContainer > div
   {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 300px;
   }
-  .footerWrapper p
+  .calenderContainer
   {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff4e8;
+  }
+  .emailMeDiv
+  {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgb(206, 223, 255);
+  }
+  #dateContainer div
+  {
+    border: 1px solid black;
+    border-radius: 10px;
     margin-top: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    opacity: .7;
+    padding: .3em;
+    background-color: white;
   }
-  .card-footer a
+  .getCallsDetails span, .getEmailDetails span
   {
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: .8;
   }
-  .feedbackSectionWrapper
+  .emailInput button
+  {
+    height: 100%;
+    width: 20%;
+    border: none;
+    background-color: #231741;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    padding: 3px;
+  }
+  .emailInput
+  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .emailInput input
+  {
+    width: 60%;
+  }
+  .getStarted
+  {
+    background-color:#5f6fbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: bold;
+  }
+
+  /*Integrated page*/
+  .integratedContainer
   {
     background-color: #FFF9FA;
   }
-  .feedbackSectionWrapper i
+  .talkDeveloper button
   {
-    color: tomato;
-    margin-bottom: 20px;
-  }
-  .feedbackSectionWrapper span
-  {
-    font-weight: bold;
-    font-size: 21px;
-  }
-  .feedbackSectionWrapper img
-  {
-    height: 125px;
-    width: auto;
-  }
-  .feedbackSectionWrapper h1
-  {
+    background-color:#5f6fbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
     font-weight: bold;
   }
-  .feedbackContent
-  {
-    font-size: 24px;
-  }
+
+  /*Features section page*/
   .featuredService span
   {
     display: block;
@@ -185,110 +217,92 @@ body {
   {
     opacity: .8;
   }
-  .integratedContainer
+
+  /*Feedback page*/
+  .feedbackSectionWrapper
   {
     background-color: #FFF9FA;
   }
-  .moreDetails span
+  .feedBackContainer
   {
-    margin-top: 20px;
+    text-align: center;
+  }
+  .feedbackSectionWrapper i
+  {
+    color: tomato;
     margin-bottom: 20px;
   }
-  .talkDeveloper button
+  .feedbackSectionWrapper span
   {
-    background-color:#5f6fbf;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px 15px 30px;
     font-weight: bold;
+    font-size: 21px;
   }
-  .calenderContainer
+  .feedbackSectionWrapper img
   {
-    width: 80%;
-    height: 100%;
-    padding: 20px;
-    margin: 0 auto;
-    border-radius: 10px;
-    background-color: #fff4e8;
+    height: 125px;
+    width: auto;
   }
-  .emailMeDiv
+  .feedbackContent
   {
-    width: 80%;
-    height: 100%;
-    padding: 20px;
-    margin: 0 auto;
-    border-radius: 10px;
-    background-color: rgb(206, 223, 255);
+    font-size: 24px;
   }
-  .getCallsContainer > div
-  {
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    height: 300px;
 
-  }
-  .getStarted
+  /*Start free page*/
+  .startFreeWrapper
   {
-    background-color:#5f6fbf;
+    height: 336px;
+    background:url(../Assets/person_banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
+    font-size: 30px;
     font-weight: bold;
+    box-sizing: border-box;
   }
-  #dateContainer div
+  .startFreeWrapper button
   {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 15px;
-    background-color: white;
-  }
-  .getCallsDetails span, .getEmailDetails span
-  {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    opacity: .8;
-  }
-  .emailInput button
-  {
-    height: 100%;
-    border: none;
-    background-color: #231741;
+    background-color: rgb(211, 46, 73);
     color: white;
-    border-radius: 0 5px 5px 0;
-    padding: 3px;
-  }
-  .emailInput
-  {
-   display: flex;
-   
-   justify-content: center;
-   align-items: center;
-  }
-  #getInTouchBtn
-  {
-    background-color:#5f6fbf;
-    color: white;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     padding: 15px 30px 15px 30px;
+  }
+
+  /*Footer page*/
+  .footerWrapper span
+  {
+    font-size: 20px;
     font-weight: bold;
+    padding-bottom: 20px;
   }
-  .features div
+  .footerWrapper p
   {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: .7;
   }
-  #hr1
+  .footerMenuList hr
   {
-    background-color: rgb(175, 171, 171);
-    height: 10px;
     width: 90%;
     border-radius: 30px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
+  #footerImg img
+  {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /*Footer*/
+  .card-footer a
+  {
+    margin: 10px;
+  }
+  
+  
  

@@ -33,12 +33,6 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div id="nav-list" class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">
-                How it works</a
-              >
-              <a class="nav-link" href="#"> Pricing</a>
-              <a class="nav-link" href="#"> Sign in</a>
-
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -51,6 +45,7 @@
                   Use cases
                 </a>
                 <ul
+                  id="dropdownList"
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
@@ -59,13 +54,18 @@
                   <li><a class="dropdown-item" href="#">Saas</a></li>
                 </ul>
               </li>
+              <a class="nav-link" href="#">How it works</a>
+              <a class="nav-link" href="#"> Pricing</a>
+              <a class="nav-link" href="#"> Sign in</a>
 
-              <!--<a  id="phone" class="nav-link d-none d-lg-block" href="#"><i class="fas fa-phone fa-2x"></i><span>06562-222XXX</span><div>*7am to 7pm</div></a>-->
+              
             </div>
           </div>
         </div>
       </nav>
     </header>
+
+    <!--Frame2112-->
     <div id="mainPage" class="container-fluid">
       <div class="container">
         <div class="row">
@@ -98,7 +98,8 @@
       </div>
     </div>
 
-    <div class="container my-5 py-5 getInTouchWrapper">
+    <!--Frame2113-->
+    <div class="container my-5 py-5">
       <div class="text-center heading">
         <h1 class="fw-bold">Seamless one-one conversation on your website</h1>
         <p class="text-dark text-opacity-75">
@@ -106,7 +107,7 @@
           instantly to an agent without taking them away from your website.
         </p>
       </div>
-      <div class="row my-5 getInTouchContent">
+      <div class="row my-5">
         <div class="col-lg-5 features">
           <div>
             <img src="./Assets/devices.svg" alt="" />
@@ -134,7 +135,8 @@
 
     <hr id="hr1" />
 
-    <div class="container my-5 py-5 getCallsWrapper">
+    <!--Frame2114-->
+    <div class="container my-5 py-5">
       <div class="heading">
         <p class="text-center">
           Worried about missing calls from customers? What if your team us busy
@@ -150,7 +152,7 @@
             <p class="text-center my-3">
               When would you like to schedule the call?
             </p>
-            <div id="dateContainer" class="d-flex justify-content-evenly">
+            <div id="dateContainer" class="d-flex justify-content-around">
               <div>
                 <p>WED</p>
                 <p>Mar 6</p>
@@ -222,14 +224,15 @@
       </div>
     </div>
 
+    <!--Frame2115-->
     <div class="my-5 py-5 integratedContainer">
-      <div class="container integratePageWrapper">
+      <div class="container">
         <div class="row">
           <div
-            class="d-flex flex-column justify-content-center col-lg-6 integrateDetails"
+            class="d-flex flex-column justify-content-center col-lg-6"
           >
             <h1 class="fw-bold mb-4">Integrate in under 5 minutes</h1>
-            <div class="moreDetails">
+            <div>
               <span>
                 <img src="./Assets/arrow.svg" alt="" />
                 Integrate using Google Tag Manager, or add a few lines of script
@@ -256,13 +259,13 @@
             class="col-lg-6"
             src="./Assets/circle.png"
             alt=""
-            class="integrateImg"
           />
         </div>
       </div>
     </div>
 
-    <div class="container py-5 my-5 featureSectionWrapper">
+    <!--Frame2116-->
+    <div class="container py-5 my-5">
       <h1 class="text-center fw-bold">
         Everything you need to support your customers over video call
       </h1>
@@ -271,7 +274,7 @@
         customers.
       </p>
       <div class="row featuredService">
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/agent.svg" alt="" />
           <span>Agent Inbox</span>
           <p class="d-none d-lg-block">
@@ -279,22 +282,22 @@
             device.
           </p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/routing.svg" alt="" />
           <span>Call Routing</span>
           <p class="d-none d-lg-block">Route your calls to the right agent.</p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/calendar.svg" alt="" />
           <span>Calendar</span>
           <p class="d-none d-lg-block">Manage your team’s schedules, availability and workload.</p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/recording.svg" alt="" />
           <span>Recording</span>
           <p class="d-none d-lg-block">Use recordings to train your agents to be more effective.</p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/notifications.svg" alt="" />
           <span>Reminders</span>
           <p class="d-none d-lg-block">
@@ -302,17 +305,17 @@
             unanswered.
           </p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/crm.svg" alt="" />
           <span>Triaging</span>
           <p class="d-none d-lg-block">Manually assign calls to agents based on their schedules.</p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/scheduling.svg" alt="" />
           <span>Scheduling</span>
           <p class="d-none d-lg-block">Automatically assign scheduled calls to the available agent.</p>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
           <img src="./Assets/dashboard.svg" alt="" />
           <span>Dashboard</span>
           <p class="d-none d-lg-block">
@@ -328,19 +331,19 @@
       </div>
     </div>
 
-    <!--feedback section-->
+    <!--Frame2117-->
     <div class="feedbackSectionWrapper">
       <div class="container py-5 feedBackContainer">
-        <div class="feedbackHeading">
-          <h1>You are in good company</h1>
+        <div>
+          <h1 class="fw-bold">You are in good company</h1>
           <p>
             Gumstack allows your customers to call you directly from your online
             store, and get them to video shop with the help of your agents
           </p>
         </div>
-        <div class="userInfo">
+        <div>
           <img src="./Assets/koskii.png" alt="" />
-          <span>Sameen Eajaz</span>
+          <span class="d-block">Sameen Eajaz</span>
           <p>COO, Co-Founder, Koskii</p>
           <div>
             <i class="fas fa-star"></i>
@@ -357,9 +360,9 @@
         </p>
       </div>
     </div>
-    <!--Conclusion part-->
+    <!--Frame2118-->
     <div class="d-flex startFreeWrapper">
-      <div class="container align-self-center startFreeContent">
+      <div class="container align-self-center">
         <p>Ready to meet your customers face to face?</p>
         <button>
           Start a free trail
@@ -368,7 +371,7 @@
       </div>
     </div>
 
-    <!-- footer section-->
+    <!--Frame2119-->
     <div class="container footerWrapper">
       <div class="row my-5 footerMenuList">
         <div class="col-lg-2 footerMenu">
@@ -378,19 +381,19 @@
           <p>SaaS</p>
         </div>
         <hr class="d-block d-lg-none">
-        <div class="col-lg-2 footerMenu">
+        <div class="col-lg-2">
           <span>Integrations</span>
           <p>Shopify</p>
           <p>Google Tag Manager</p>
         </div>
         <hr class="d-block d-lg-none">
-        <div class="col-lg-2 footerMenu">
+        <div class="col-lg-2">
           <span>Compare</span>
           <p>Vs Whatsapp</p>
           <p>Vs Facetime</p>
         </div>
         <hr class="d-block d-lg-none">
-        <div class="col-lg-3 footerMenu">
+        <div class="col-lg-3">
           <span>Support</span>
           <p>Talk to us on Gumstack</p>
           <p>Chat with us</p>
@@ -408,23 +411,24 @@
 
     <footer class="card-footer">
       <div class="container">
-        <div class="row my-3">
-          <div class="col-lg-3">
+        <div class="row mb-3">
+          <div class="col-lg-3 mt-3">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
-          <div class="col-lg-5 d-none d-lg-block">
+          <div class="col-lg-5 d-none d-lg-block mt-3">
             &copy; Copyright Gumstack Inc. 2020- All rights reserved
           </div>
-          <div class="col-lg-2">Terms and conditions</div>
-          <div class="col-lg-2">privacy policies</div>
-          <div class="col-lg-5 d-block d-lg-none">
+          <div class="col-lg-2 mt-3">Terms and conditions</div>
+          <div class="col-lg-2 mt-3">privacy policies</div>
+          <div class="d-block d-lg-none text-dark text-opacity-50 text-center mt-5">
             &copy; Copyright Gumstack Inc. 2020- All rights reserved
           </div>
         </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
