@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/739c19ad40.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <a href="landingPage.html" class="float-start">
+            <img src="img/logo-lite.svg" alt="logo-img" />
+          </a>
+          <button
+            id="navbarToggle"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="nav-list" class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">
+                How it works</a
+              >
+              <a class="nav-link" href="#"> Pricing</a>
+              <a class="nav-link" href="#"> Sign in</a>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Use cases
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Retail</a></li>
+                  <li><a class="dropdown-item" href="#">E-commerce</a></li>
+                  <li><a class="dropdown-item" href="#">Saas</a></li>
+                </ul>
+              </li>
+
+              <!--<a  id="phone" class="nav-link d-none d-lg-block" href="#"><i class="fas fa-phone fa-2x"></i><span>06562-222XXX</span><div>*7am to 7pm</div></a>-->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="mainPage" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="homeDetailHeader">
+              <h1>Meet your customers face-to-face</h1>
+              <h4>Instantly on your website/app</h4>
+            </div>
+            <p class="my-3 text-white text-opacity-75">
+              Integrate video calling on your website/app in under 5 minutes.
+              Showcase your products, assist them with their purchase or help
+              resolve issues faster with video.
+            </p>
+            <button id="registerForDemoBtn">
+              Register for demo <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div
+            id="mainPageImages"
+            class="col-lg-6 d-flex justify-content-center"
+          >
+            <img src="./Assets/homeImg.png" alt="" class="d-none d-lg-block" />
+            <img
+              src="./Assets/hero_mockup_mob.png"
+              alt=""
+              class="d-bolck d-lg-none"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 py-5 getInTouchWrapper">
+      <div class="text-center heading">
+        <h1 class="fw-bold">Seamless one-one conversation on your website</h1>
+        <p class="text-dark text-opacity-75">
+          Allow your customers to call you whenever they need you. Connect them
+          instantly to an agent without taking them away from your website.
+        </p>
+      </div>
+      <div class="row my-5 getInTouchContent">
+        <div class="col-lg-5 features">
+          <div>
+            <img src="./Assets/devices.svg" alt="" />
+            Works on all devices
+          </div>
+          <div>
+            <img src="./Assets/click.svg" alt="" />
+            1-click video calls directly from browser
+          </div>
+          <div>
+            <img src="./Assets/optional.svg" alt="" />
+            Optional video for customers
+          </div>
+          <div>
+            <img src="./Assets/no_downloads.svg" alt="" />
+            No app downloads
+          </div>
+          <button id="getInTouchBtn">
+            Get in touch <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <img class="col-lg-7 my-4" src="./Assets/banner.svg" alt="" />
+      </div>
+    </div>
+
+    <hr id="hr1" />
+
+    <div class="container my-5 py-5 getCallsWrapper">
+      <div class="heading">
+        <p class="text-center">
+          Worried about missing calls from customers? What if your team us busy
+          or not available?
+        </p>
+        <h1 class="fw-bold text-center">
+          Let customers schedule calls when you are not around
+        </h1>
+      </div>
+      <div class="row py-3 getCallsContainer">
+        <div class="col-lg-6">
+          <div class="fw-bold calenderContainer">
+            <p class="text-center my-3">
+              When would you like to schedule the call?
+            </p>
+            <div id="dateContainer" class="d-flex justify-content-evenly">
+              <div>
+                <p>WED</p>
+                <p>Mar 6</p>
+              </div>
+              <div>
+                <p>THU</p>
+                <p>Mar 7</p>
+              </div>
+              <div>
+                <p>FRI</p>
+                <p>Mar 8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 getCallsDetails">
+          <h3 class="fw-bold my-3">
+            Schedule callback when you are not around
+          </h3>
+          <span>
+            <img src="./Assets/arrow.svg" alt="" />
+            Automatically capture contact details and schedule callback
+          </span>
+          <span class="d-block">
+            <img src="./Assets/arrow.svg" alt="" />
+            Book meeting only during your office hours
+          </span>
+          <span class="d-block">
+            <img src="./Assets/arrow.svg" alt="" />
+            Use any software to complete the call- Zoom, Meet, or just phone
+          </span>
+        </div>
+        <div class="col-lg-6 getEmailDetails">
+          <h3 class="fw-bold my-3">
+            Sync your team's calendar and manage schedules without a separate
+            calendar software
+          </h3>
+          <span>
+            <img src="./Assets/arrow.svg" alt="" />
+            Show availability across your agent's calendar
+          </span>
+          <span class="d-block">
+            <img src="./Assets/arrow.svg" alt="" />
+            Send reminders so that they don't forget their appointemnts
+          </span>
+          <span class="d-block">
+            <img src="./Assets/arrow.svg" alt="" />
+            Add calls to your calendar or CRM
+          </span>
+        </div>
+        <div class="col-lg-6">
+          <div class="fw-bold text-center py-5 emailMeDiv">
+            <p>
+              Sync your Google Calender account and update it all calls get
+              scheduled on Gumstack
+            </p>
+            <div class="emailInput">
+              <input type="text" placeholder="George@gmail.com" />
+              <button>Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center my-5">
+        <button class="getStarted">
+          Let's get started
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="my-5 py-5 integratedContainer">
+      <div class="container integratePageWrapper">
+        <div class="row">
+          <div
+            class="d-flex flex-column justify-content-center col-lg-6 integrateDetails"
+          >
+            <h1 class="fw-bold mb-4">Integrate in under 5 minutes</h1>
+            <div class="moreDetails">
+              <span>
+                <img src="./Assets/arrow.svg" alt="" />
+                Integrate using Google Tag Manager, or add a few lines of script
+                to your website.
+              </span>
+              <span class="d-block">
+                <img src="./Assets/arrow.svg" alt="" />
+                1-click installations for Shopify, Wordpress, Wix.
+              </span>
+              <span class="d-block">
+                <img src="./Assets/arrow.svg" alt="" />
+                Install easily on Webflow, Squarespace and more.
+              </span>
+            </div>
+            <div class="mt-5 talkDeveloper">
+              <button>
+                Talk to our Developers
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <p class="ms-5">Powered by Gumstack</p>
+            </div>
+          </div>
+          <img
+            class="col-lg-6"
+            src="./Assets/circle.png"
+            alt=""
+            class="integrateImg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5 my-5 featureSectionWrapper">
+      <h1 class="text-center fw-bold">
+        Everything you need to support your customers over video call
+      </h1>
+      <p class="text-center mb-5">
+        Just install your script, add your team and start delighting your
+        customers.
+      </p>
+      <div class="row featuredService">
+        <div class="col-lg-3">
+          <img src="./Assets/agent.svg" alt="" />
+          <span>Agent Inbox</span>
+          <p>
+            Allows agents to manage their queue & answer customers from any
+            device.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/routing.svg" alt="" />
+          <span>Call Routing</span>
+          <p>Route your calls to the right agent.</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/calendar.svg" alt="" />
+          <span>Calendar</span>
+          <p>Manage your team’s schedules, availability and workload.</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/recording.svg" alt="" />
+          <span>Recording</span>
+          <p>Use recordings to train your agents to be more effective.</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/notifications.svg" alt="" />
+          <span>Reminders</span>
+          <p>
+            Notifications and alerts to agents and customers, so no calls go
+            unanswered.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/crm.svg" alt="" />
+          <span>Triaging</span>
+          <p>Manually assign calls to agents based on their schedules.</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/scheduling.svg" alt="" />
+          <span>Scheduling</span>
+          <p>Automatically assign scheduled calls to the available agent.</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./Assets/dashboard.svg" alt="" />
+          <span>Dashboard</span>
+          <p>
+            Monitor response times and improve the overall customer experience.
+          </p>
+        </div>
+      </div>
+      <div class="featureButton">
+        <button>
+          Get started for free
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!--feedback section-->
+    <div class="feedbackSectionWrapper">
+      <div class="container py-5 feedBackContainer">
+        <div class="feedbackHeading">
+          <h1>You are in good company</h1>
+          <p>
+            Gumstack allows your customers to call you directly from your online
+            store, and get them to video shop with the help of your agents
+          </p>
+        </div>
+        <div class="userInfo">
+          <img src="./Assets/koskii.png" alt="" />
+          <span>Sameen Eajaz</span>
+          <p>COO, Co-Founder, Koskii</p>
+          <div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <p class="feedbackContent">
+          “The app is exactly what we were looking for and has helped us add
+          another sales channel very quickly giving our customers a discovery
+          platform to explore high asp products”
+        </p>
+      </div>
+    </div>
+    <!--Conclusion part-->
+    <div class="d-flex startFreeWrapper">
+      <div class="container align-self-center startFreeContent">
+        <p>Ready to meet your customers face to face?</p>
+        <button>
+          Start a free trail
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- footer section-->
+    <div class="container footerWrapper">
+      <div class="row my-5 footerMenuList">
+        <div class="col-lg-2 footerMenu">
+          <span>Use cases</span>
+          <p>Retail</p>
+          <p>E-Commerce</p>
+          <p>SaaS</p>
+        </div>
+        <div class="col-lg-2 footerMenu">
+          <span>Integrations</span>
+          <p>Shopify</p>
+          <p>Google Tag Manager</p>
+        </div>
+        <div class="col-lg-2 footerMenu">
+          <span>Compare</span>
+          <p>Vs Whatsapp</p>
+          <p>Vs Facetime</p>
+        </div>
+        <div class="col-lg-3 footerMenu">
+          <span>Support</span>
+          <p>Talk to us on Gumstack</p>
+          <p>Chat with us</p>
+        </div>
+        <div id="footerImg" class="col-lg-3">
+          <span>Resources</span>
+          <p>Developer API</p>
+          <p>Download Agent apps</p>
+          <img src="./Assets/app_store.png" alt="" />
+          <img src="./Assets/play_store.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="card-footer">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-lg-3">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="col-lg-5">
+            &copy; Copyright Gumstack Inc. 2020- All rights reserved
+          </div>
+          <div class="col-lg-2">Terms and conditions</div>
+          <div class="col-lg-2">privacy policies</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
