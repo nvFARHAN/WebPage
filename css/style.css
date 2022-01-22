@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap');
 body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -77,6 +79,7 @@ body {
     height: 336px;
     background:url(../Assets/person_banner.png) no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
     color: white;
     font-size: 30px;
@@ -155,6 +158,11 @@ body {
   }
   .featuredService div
   {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -206,9 +214,6 @@ body {
   }
   .emailMeDiv
   {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 80%;
     height: 100%;
     padding: 20px;
@@ -231,7 +236,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px;
     font-weight: bold;
   }
   #dateContainer div
@@ -255,14 +260,15 @@ body {
     background-color: #231741;
     color: white;
     border-radius: 0 5px 5px 0;
+    padding: 3px;
   }
-  /*.emailInput input
+  .emailInput
   {
-    flex: 3;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  }*/
+   display: flex;
+   
+   justify-content: center;
+   align-items: center;
+  }
   #getInTouchBtn
   {
     background-color:#5f6fbf;
@@ -285,3 +291,4 @@ body {
     border-radius: 30px;
     margin: 0 auto;
   }
+ 
